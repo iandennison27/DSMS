@@ -1,13 +1,9 @@
 DSMS sudoers
 ===============
 
-|img_travis| |img_sr|
-
 This is a management utility to build and distribute Sudoers files over large landscapes.
 
 (c) Ian Dennison 2024
-
-.. contents:: **Table of Contents**
 
 Overview
 -------------
@@ -25,12 +21,12 @@ Features
 * Reverse engineering script for existing installations (prototype only)
 
 Requirements
-^^^^^^^^^^^^
+-------------
 * RHEL 7 Host
 * PHP / Apache
 * mysql / mariadb
 
 Upcoming Changes
-^^^^^^^^^^^^
+----------------
 System will be rewritten for RHEL 8+ sometime in 2024/5
 
