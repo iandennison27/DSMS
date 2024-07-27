@@ -1,10 +1,36 @@
-# DSMS
-# DSMS Sudoers Management System 1.10.0
-# This is a fork of the ben schofield DSMS, in process of being customised for NZ public service.
-# it adds NIS+ groups over and above version 1.9
-# not tested fully, buyer beware.
-#
-# Update: 8 June 2023 - delta-only-copy
-#
-# for rhel 7 you will need the base install dvd mounted, pref as /cdrom, the rest of the packages hould be present.
-# Share and enjoy! Ian D, Jul 2022
+DSMS sudoers
+===============
+
+|img_travis| |img_sr|
+
+This is a management utility to build and distribute Sudoers files over large landscapes.
+
+(c) Ian Dennison 2024
+
+.. contents:: **Table of Contents**
+
+Overview
+-------------
+This utility provides a central point for creating the content for Sudoers files and distributing the resulting files to the client Servers.
+It removes the need to edit the file directly, verifies the changes before distribution and audits the actions of those maintaning the system.
+
+Features
+-------------
+* Individual signons for tracking User changes
+* Supports AD groups usage for User specification
+* Performs deploy to hosts only on change of content
+* Supports RHEL, SunOS, and other Linux variants as clients
+* Time expired access can be configured
+* Cutdown sudoers files for public facing / DMZ Hosts
+* Reverse engineering script for existing installations (prototype only)
+
+Requirements
+^^^^^^^^^^^^
+* RHEL 7 Host
+* PHP / Apache
+* mysql / mariadb
+
+Upcoming Changes
+^^^^^^^^^^^^
+System will be rewritten for RHEL 8+ sometime in 2024/5
+
